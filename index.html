@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Edukasi Buah</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="gameContainer">
+        <h1>FRUIT POP!</h1>
+
+        <!-- 🔘 Mode Pilihan Game -->
+        <div class="mode-buttons">
+            <p>Pilih Mode Permainan:</p>
+            <button onclick="setGameMode('name')">🍎 Tebak Nama</button>
+            <button onclick="setGameMode('color')">🎨 Tebak Warna</button>
+        </div>
+
+        <!-- Tombol awal jika hanya satu mode -->
+        <button id="startGame" style="display: none;">Mulai Permainan</button>
+
+        <!-- Area Game -->
+        <div id="gameArea" class="hidden">
+            <p>Tebak Nama Buah:</p>
+            <img id="fruitImage" src="assets/apple.png" alt="Gambar Buah">
+            <div class="options">
+                <button class="option"></button>
+                <button class="option"></button>
+                <button class="option"></button>
+            </div>
+            <p id="feedback"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
